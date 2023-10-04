@@ -136,6 +136,38 @@ header {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
+.hero {
+  background-color: hsl(30, 15.38%, 94.9%);
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero__title h1 {
+  color: var(--clr-secondary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero__title p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: hsl(69, 29%, 49%);
+}
+
+.hero__img {
+  width: 300px;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -171,5 +203,27 @@ header {
     color: var(--clr-secondary);
     font-size: 1rem;
     font-weight: 700;
+  }
+
+  .hero__container {
+    padding-top: 13rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: initial;
+    text-align: initial;
+  }
+
+  .hero__title h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero__title p {
+    margin-top: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hero__img {
+    width: 80%;
   }
 }
