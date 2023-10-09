@@ -179,7 +179,7 @@ header {
 .menu__title {
   text-align: center;
   color: var(--clr-secondary);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .menu__lists {
@@ -268,6 +268,43 @@ header {
   display: none;
 }
 
+.about {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.about__container {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.about__container img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.about__content {
+  padding: 1rem;
+}
+
+.about__content h1 {
+  font-size: 2rem;
+  color: var(--clr-secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about__content p {
+  font-size: 1rem;
+  color: var(--clr-primary);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -335,7 +372,7 @@ header {
   }
 
   .menu__title {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .menu__lists ul {
@@ -354,6 +391,10 @@ header {
   .active {
     background-color: transparent;
     color: var(--clr-secondary);
+  }
+
+  .menu {
+    margin-top: 10rem;
   }
 
   .menu__item button {
@@ -391,5 +432,32 @@ header {
   .card__content p {
     font-size: 0.875rem;
     margin-top: 1rem;
+  }
+
+  .about {
+    flex-direction: row;
+    margin-top: 10rem;
+  }
+
+  .about__container {
+    max-width: 727px;
+    -webkit-mask-image: linear-gradient(to right, black, transparent 100%);
+    mask-image: linear-gradient(to right, black, transparent 100%);
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 4rem;
+    max-width: 50%;
+  }
+
+  .about__content h1 {
+    font-size: 4rem;
+  }
+
+  .about__content p {
+    font-size: 1.15rem;
   }
 }
