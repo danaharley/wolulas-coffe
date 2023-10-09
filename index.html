@@ -18,24 +18,22 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__links">
             <li class="nav__item">
-              <a href="#menu" class="nav__link">Menu</a>
+              <a href="#tentang-kami" class="nav__link">Tentang Kami</a>
             </li>
             <li class="nav__item">
               <a href="#lokasi-store" class="nav__link">Lokasi Store</a>
             </li>
             <li class="nav__item">
-              <a href="#tentang-kami" class="nav__link">Tentang Kami</a>
+              <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li class="nav__item">
               <a href="#hubungi-kami" class="nav__link">Hubungi Kami</a>
             </li>
           </ul>
-
           <div class="nav__close" id="nav-close">
             <i class="ri-close-fill"></i>
           </div>
         </div>
-
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-fill"></i>
         </div>
@@ -45,14 +43,38 @@
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__title">
-            <h1>Grind The Essentials</h1>
+            <h1>The Perfect Blend of Freshness</h1>
             <p>
-              Made with Indonesia’s Finest Beans for your everyday modern coffee
+              Made with Indonesia&apos;s Finest Beans for your everyday modern coffee
               experience
             </p>
           </div>
           <div class="hero__img">
             <img src="img/coffee-2.png" alt="coffee" />
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h1 class="menu__title">Our Menu's</h1>
+        <div class="menu__container">
+          <div class="menu__lists">
+            <ul>
+              <li class="menu__item">
+                <button class="btn active" onclick="filterProduct('all')">All</button>
+              </li>
+              <li class="menu__item">
+                <button class="btn" onclick="filterProduct('coffee')">Coffee</button>
+              </li>
+              <li class="menu__item">
+                <button class="btn" onclick="filterProduct('noncoffee')">Non Coffee</button>
+              </li>
+              <li class="menu__item">
+                <button class="btn" onclick="filterProduct('iceblended')">Ice Blended</button>
+              </li>
+              </ul>
+            </div>
+            <div class="menu__content" id="content">
+            </div>
           </div>
         </div>
       </section>
