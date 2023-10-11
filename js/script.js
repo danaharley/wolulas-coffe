@@ -48,7 +48,8 @@ const products = {
       price: "30.000",
       description:
         "Minuman yang segar dan lezat yang terbuat dari campuran pisang dan nanas yang di-blend dengan es dan bahan lainnya.",
-      image: "https://bakealish.com/wp-content/uploads/2018/04/IMG_0679.jpg",
+      image:
+        "https://cookingformysoul.com/wp-content/uploads/2022/06/pineapple-banana-smoothie-3-min.jpg",
     },
     {
       productName: "Fruit Smoothie Ice Blended",
