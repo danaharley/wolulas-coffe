@@ -369,6 +369,118 @@ header {
   margin-bottom: 1rem;
 }
 
+.contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact > p {
+  color: gray;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__box {
+  flex: 1;
+  height: 500px;
+  background-color: var(--clr-secondary);
+}
+
+.contact__form {
+  flex: 1;
+  height: 500px;
+  background-color: var(--clr-body);
+}
+
+.contact__box {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact__box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__box h1 {
+  font-size: 1.125rem;
+}
+
+.contact__box p {
+  font-size: 0.813rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__box .icon {
+  color: #fff;
+  margin-right: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.content__list {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.content__list span {
+  font-size: 0.813rem;
+}
+
+.contact__form {
+  padding: 2rem 0;
+  margin-bottom: 10rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  background-color: var(--clr-body);
+  border: 1px solid rgba(14, 17, 17, 0.3);
+  color: rgba(3, 95, 65, 0.7);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+  padding: 0.75rem 0.938rem;
+}
+
+textarea {
+  max-height: 150px;
+}
+
+.form button {
+  background-color: var(--clr-secondary);
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.75rem 0.938rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -542,5 +654,34 @@ header {
 
   .store__container .card__content {
     padding-left: 1.25rem;
+  }
+
+  .contact {
+    margin-top: 10rem;
+  }
+
+  .contact > p {
+    font-size: 1.125rem;
+  }
+
+  .contact__container {
+    flex-direction: row;
+  }
+
+  .contact__box h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact__box p,
+  .content__list span {
+    font-size: 0.875rem;
+  }
+
+  .content__list > .icon {
+    font-size: 1.75rem;
+  }
+
+  .contact__form {
+    padding: 0 2rem;
   }
 }
