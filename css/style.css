@@ -564,6 +564,70 @@ h2 {
   padding: 1.5rem 1.5rem;
 }
 
+.blog {
+  margin-top: 5rem;
+  background-color: rgba(231, 240, 238, 0.3);
+}
+
+.blog__content {
+  padding: 2rem 1rem;
+}
+
+.blog__content > p {
+  text-align: center;
+  margin: 1rem 0;
+  color: gray;
+}
+
+.blog__content img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
+  padding-top: 1rem;
+}
+
+.blog__detail {
+  padding: 0.875rem 0;
+}
+
+.blog__detail h1 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog__detail span {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.blog__detail p {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clr-secondary);
+  width: fit-content;
+  padding: 0.75rem 0.813rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.read-more .icon {
+  font-size: 1.25rem;
+}
+
+.read-more p {
+  font-size: 0.875rem;
+  color: #1e4a3c;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -780,5 +844,13 @@ h2 {
 
   .right {
     margin-top: 0;
+  }
+
+  .blog {
+    margin-top: 10rem;
+  }
+
+  .blog__content img {
+    height: 400px;
   }
 }
